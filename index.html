@@ -9,9 +9,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.7/angular.min.js"></script>
   <script src="//code.angularjs.org/1.2.29/angular-route.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
-  <script src="./app/app.js"></script>
+  <!-- Lodash -->
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js">
+  _ = _.noConflict()
+  </script>
+  <!-- Gulp app -->
+  <script src="./minified/app.js"></script>
+  <!-- Gulp stylesheet -->
+  <link rel="stylesheet" type="text/css" href="minified/styles.css">
 </head>
 <body ng-controller="rootCtrl">
-  {{hello}}
+  <div ng-repeat="item in hello"> 
+    {{item}}
+  </div>
 </body>
 </html>
