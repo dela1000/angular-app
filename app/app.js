@@ -6,11 +6,11 @@ let rootCtrl = angular.module('rootCtrl', []);
 
 rootCtrl.controller("rootCtrl", ($scope) => {
     console.log("+++ 6 app.js rootCtrl activated!")
-    let list = ['HELLO!', 'HOW', 'ARE', 'YOU?']
+    let hello = ['HELLO!', 'HOW', 'ARE', 'YOU?']
 
-    $scope.hello = [];
+    $scope.list = [];
 
-    _.forEach(list, (item) => {
-        $scope.hello.push(item)
+    _.forEach(hello, (item) => {
+        $scope.list.push(item)
     })
 })
