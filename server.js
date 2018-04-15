@@ -10,7 +10,8 @@ app.use(cors())
 
 app.use(bodyParser.json());
 
-app.use('/', routes);
+
+app.use('*', routes);
 app.use(express.static(path.join(__dirname)));
 
 app.listen(4040, () => console.log('Listening on port 4040'))
